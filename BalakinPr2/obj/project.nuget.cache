@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HYRU3tC0hv8=",
+  "success": true,
+  "projectFilePath": "/home/cutecruelty/balakintasks/BalakinPr2/BalakinPr2.csproj",
+  "expectedPackageFiles": [
+    "/home/cutecruelty/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
