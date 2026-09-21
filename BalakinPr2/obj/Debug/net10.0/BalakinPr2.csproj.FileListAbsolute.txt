@@ -1,0 +1,15 @@
+/home/cutecruelty/balakintasks/BalakinPr2/bin/Debug/net10.0/BalakinPr2
+/home/cutecruelty/balakintasks/BalakinPr2/bin/Debug/net10.0/BalakinPr2.deps.json
+/home/cutecruelty/balakintasks/BalakinPr2/bin/Debug/net10.0/BalakinPr2.runtimeconfig.json
+/home/cutecruelty/balakintasks/BalakinPr2/bin/Debug/net10.0/BalakinPr2.dll
+/home/cutecruelty/balakintasks/BalakinPr2/bin/Debug/net10.0/BalakinPr2.pdb
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.GeneratedMSBuildEditorConfig.editorconfig
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.AssemblyInfoInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.AssemblyInfo.cs
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.csproj.CoreCompileInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.sourcelink.json
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.dll
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/refint/BalakinPr2.dll
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.pdb
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/BalakinPr2.genruntimeconfig.cache
+/home/cutecruelty/balakintasks/BalakinPr2/obj/Debug/net10.0/ref/BalakinPr2.dll

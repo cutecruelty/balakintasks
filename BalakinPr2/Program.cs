@@ -7,7 +7,7 @@ try
     if (usrInput1.Length <= 8)
     {
         int result1 = Convert.ToInt32(usrInput1, 2);
-        Console.WriteLine($"резултьат первода: ${result1}");
+        Console.WriteLine($"резултьат первода: {result1}");
 
     }
 }
