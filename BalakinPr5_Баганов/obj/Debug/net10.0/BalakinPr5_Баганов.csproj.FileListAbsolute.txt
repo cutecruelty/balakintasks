@@ -1,0 +1,15 @@
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/bin/Debug/net10.0/BalakinPr5_Баганов
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/bin/Debug/net10.0/BalakinPr5_Баганов.deps.json
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/bin/Debug/net10.0/BalakinPr5_Баганов.runtimeconfig.json
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/bin/Debug/net10.0/BalakinPr5_Баганов.dll
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/bin/Debug/net10.0/BalakinPr5_Баганов.pdb
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.GeneratedMSBuildEditorConfig.editorconfig
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.AssemblyInfoInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.AssemblyInfo.cs
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.csproj.CoreCompileInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.sourcelink.json
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.dll
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/refint/BalakinPr5_Баганов.dll
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.pdb
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/BalakinPr5_Баганов.genruntimeconfig.cache
+/home/cutecruelty/balakintasks/BalakinPr5_Баганов/obj/Debug/net10.0/ref/BalakinPr5_Баганов.dll
