@@ -1,107 +1,90 @@
-﻿using System.Globalization;
+﻿double a, b, c, n;
+string oper, result = "";
 
-double a = ReadNumber("введите число a: ");
-string? operation = ReadText(
-    "введите операцию (+, -, *, /, ^, sqrt, корень, %, квад): ");
+Console.Write("введите операцию (+, -, *, /, ^, %, корень, квад): ");
+oper = Console.ReadLine();
 
-if (operation is null)
-    Environment.Exit(0);
+Console.Write("введите число: ");
+a = Convert.ToDouble(Console.ReadLine());
 
-string answer = operation switch
+result = "ошибка ввода";
+
+if (oper == "корень")
 {
-    "квад" => SolveQuadratic(a,
-        ReadNumber("введите коэффициент b: "),
-        ReadNumber("введите коэффициент c: ")),
-    "sqrt" => Root(a, 2),
-    "корень" => Root(a, ReadDegree("введите степень корня: ")),
-    _ => Apply(operation, a, ReadNumber("введите второе число b: "))
-};
+    Console.Write("введите степень корня: ");
+    n = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine(answer);
-
-static string? ReadText(string prompt)
-{
-    Console.Write(prompt);
-    return Console.ReadLine()?.Trim();
-}
-
-static double ReadNumber(string prompt)
-{
-    while (true)
+    if (n < 2)
+        result = "степень корня должна быть не меньше 2";
+    else if (a < 0 && n % 2 == 0)
+        result = "корень чётной степени из отрицательного числа не существует";
+    else
     {
-        string? text = ReadText(prompt)?.Replace(',', '.');
-        if (text is null)
-            Environment.Exit(0);
-
-        if (double.TryParse(text, NumberStyles.Float,
-                CultureInfo.InvariantCulture, out double value))
-            return value;
-
-        Console.WriteLine("введено не число, повторите ввод");
+        double r = Math.Round(Math.Pow(Math.Abs(a), 1.0 / n), 10);
+        result = a < 0
+            ? $" корень степени {n} из {a} = {-r}"
+            : $" корень степени {n} из {a} = {r}";
     }
 }
-
-static int ReadDegree(string prompt)
+else if (oper == "квад")
 {
-    while (true)
-    {
-        string? text = ReadText(prompt);
-        if (text is null)
-            Environment.Exit(0);
+    Console.Write("введите коэффициент b: ");
+    b = Convert.ToDouble(Console.ReadLine());
 
-        if (int.TryParse(text, out int degree) && degree >= 2)
-            return degree;
-
-        Console.WriteLine("степень корня - целое число не меньше 2");
-    }
-}
-
-static string Format(double value) =>
-    value.ToString("0.##########", CultureInfo.InvariantCulture);
-
-static string Root(double value, int degree)
-{
-    bool negative = value < 0;
-
-    if (negative && degree % 2 == 0)
-        return "корень чётной степени из отрицательного числа не существует";
-
-    double result = Math.Pow(Math.Abs(value), 1.0 / degree);
-
-    return negative
-        ? $" корень степени {degree} из {Format(value)} = {Format(-result)}"
-        : $" корень степени {degree} из {Format(value)} = {Format(result)}";
-}
-
-static string Apply(string operation, double a, double b) => operation switch
-{
-    "+" => $" {Format(a)} + {Format(b)} = {Format(a + b)}",
-    "-" => $" {Format(a)} - {Format(b)} = {Format(a - b)}",
-    "*" => $" {Format(a)} * {Format(b)} = {Format(a * b)}",
-    "/" => b == 0
-        ? "на 0 нельзя делить"
-        : $" {Format(a)} / {Format(b)} = {Format(a / b)}",
-    "^" => $" {Format(a)} ^ {Format(b)} = {Format(Math.Pow(a, b))}",
-    "%" => b == 0
-        ? "на 0 нельзя делить"
-        : $" {Format(a)} % {Format(b)} = {Format(a % b)}",
-    _ => "операции не существует"
-};
-
-static string SolveQuadratic(double a, double b, double c)
-{
-    if (a == 0)
-        return b == 0
-            ? c == 0 ? "бесконечные решения" : "нет решений"
-            : $"корень линейного уравнения: x = {Format(-c / b)}";
+    Console.Write("введите коэффициент c: ");
+    c = Convert.ToDouble(Console.ReadLine());
 
     double d = b * b - 4 * a * c;
 
-    return d switch
+    if (a == 0)
     {
-        > 0 => $"два корня: x1 = {Format((-b + Math.Sqrt(d)) / (2 * a))}, " +
-               $"x2 = {Format((-b - Math.Sqrt(d)) / (2 * a))}",
-        0 => $"один корень: x = {Format(-b / (2 * a))}",
-        _ => "нет действительных корней"
-    };
+        result = b == 0
+            ? c == 0 ? "бесконечные решения" : "нет решений"
+            : $"корень линейного уравнения: x = {-c / b}";
+    }
+    else if (d > 0)
+        result = $"два корня: x1 = {(-b + Math.Sqrt(d)) / (2 * a)}, " +
+                 $"x2 = {(-b - Math.Sqrt(d)) / (2 * a)}";
+    else if (d == 0)
+        result = $"один корень: x = {-b / (2 * a)}";
+    else
+        result = "нет действительных корней";
 }
+else
+{
+    Console.Write("введите второе число: ");
+    b = Convert.ToDouble(Console.ReadLine());
+
+    switch (oper)
+    {
+        case "+":
+            result = $" {a} + {b} = {a + b}";
+            break;
+
+        case "-":
+            result = $" {a} - {b} = {a - b}";
+            break;
+
+        case "*":
+            result = $" {a} * {b} = {a * b}";
+            break;
+
+        case "/":
+            result = b == 0 ? "на 0 нельзя делить" : $" {a} / {b} = {a / b}";
+            break;
+
+        case "%":
+            result = b == 0 ? "на 0 нельзя делить" : $" {a} % {b} = {a % b}";
+            break;
+
+        case "^":
+            result = $" {a} ^ {b} = {Math.Pow(a, b)}";
+            break;
+
+        default:
+            result = "операции не существует";
+            break;
+    }
+}
+
+Console.WriteLine(result);
