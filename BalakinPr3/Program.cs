@@ -3,6 +3,7 @@ string oper, result = "";
 
 Console.Write("введите число a: ");
 a = Convert.ToDouble(Console.ReadLine());
+
 Console.Write("введите операцию (+, -, *, /, ^, sqrt, %, квад): ");
 oper = Console.ReadLine();
 
@@ -10,6 +11,7 @@ if (oper == "квад")
 {
     Console.Write("введите коэффициент b: ");
     b = Convert.ToDouble(Console.ReadLine());
+
     Console.Write("введите коэффициент c: ");
     c = Convert.ToDouble(Console.ReadLine());
 
@@ -23,6 +25,7 @@ if (oper == "квад")
     else
     {
         double d = b * b - 4 * a * c;
+
         if (d > 0)
         {
             double x1 = (-b + Math.Sqrt(d)) / (2 * a);
@@ -30,9 +33,13 @@ if (oper == "квад")
             result = $"два корня: x1 = {x1}, x2 = {x2}";
         }
         else if (d == 0)
+        {
             result = $"один корень: x = {-b / (2 * a)}";
+        }
         else
+        {
             result = "нет действительных корней";
+        }
     }
 }
 else if (oper == "sqrt")
@@ -47,26 +54,33 @@ else
     Console.Write("введите второе число b: ");
     b = Convert.ToDouble(Console.ReadLine());
     result = "Ошибка";
+
     switch (oper)
     {
         case "+":
             result = $" {a} + {b} = {a + b}";
             break;
+
         case "-":
             result = $" {a} - {b} = {a - b}";
             break;
+
         case "*":
             result = $" {a} * {b} = {a * b}";
             break;
+
         case "/":
             result = b != 0 ? $" {a} / {b} = {a / b}" : "на 0 нельзя делить";
             break;
+
         case "^":
             result = $" {a} ^ {b} = {Math.Pow(a, b)}";
             break;
+
         case "%":
             result = b != 0 ? $" {a} % {b} = {a % b}" : "на 0 нельзя делить";
             break;
+
         default:
             result = "операции не существует";
             break;
