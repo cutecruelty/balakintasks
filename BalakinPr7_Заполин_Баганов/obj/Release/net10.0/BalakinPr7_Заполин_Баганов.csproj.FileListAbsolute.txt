@@ -1,0 +1,15 @@
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/bin/Release/net10.0/BalakinPr7_Заполин_Баганов
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/bin/Release/net10.0/BalakinPr7_Заполин_Баганов.deps.json
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/bin/Release/net10.0/BalakinPr7_Заполин_Баганов.runtimeconfig.json
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/bin/Release/net10.0/BalakinPr7_Заполин_Баганов.dll
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/bin/Release/net10.0/BalakinPr7_Заполин_Баганов.pdb
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.GeneratedMSBuildEditorConfig.editorconfig
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.AssemblyInfoInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.AssemblyInfo.cs
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.csproj.CoreCompileInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.sourcelink.json
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.dll
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/refint/BalakinPr7_Заполин_Баганов.dll
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.pdb
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/BalakinPr7_Заполин_Баганов.genruntimeconfig.cache
+/home/cutecruelty/balakintasks/BalakinPr7_Заполин_Баганов/obj/Release/net10.0/ref/BalakinPr7_Заполин_Баганов.dll

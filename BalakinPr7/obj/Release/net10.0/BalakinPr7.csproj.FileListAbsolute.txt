@@ -1,0 +1,15 @@
+/home/cutecruelty/balakintasks/BalakinPr7/bin/Release/net10.0/BalakinPr7
+/home/cutecruelty/balakintasks/BalakinPr7/bin/Release/net10.0/BalakinPr7.deps.json
+/home/cutecruelty/balakintasks/BalakinPr7/bin/Release/net10.0/BalakinPr7.runtimeconfig.json
+/home/cutecruelty/balakintasks/BalakinPr7/bin/Release/net10.0/BalakinPr7.dll
+/home/cutecruelty/balakintasks/BalakinPr7/bin/Release/net10.0/BalakinPr7.pdb
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.GeneratedMSBuildEditorConfig.editorconfig
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.AssemblyInfoInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.AssemblyInfo.cs
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.csproj.CoreCompileInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.sourcelink.json
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.dll
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/refint/BalakinPr7.dll
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.pdb
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/BalakinPr7.genruntimeconfig.cache
+/home/cutecruelty/balakintasks/BalakinPr7/obj/Release/net10.0/ref/BalakinPr7.dll

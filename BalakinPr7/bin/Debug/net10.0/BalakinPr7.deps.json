@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "BalakinPr7/1.0.0": {
+        "runtime": {
+          "BalakinPr7.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BalakinPr7/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
