@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "e/xS2l7/ipg=",
+  "success": true,
+  "projectFilePath": "/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/BalakinPr8_Самсонов_Вдовиченко.csproj",
+  "expectedPackageFiles": [
+    "/home/cutecruelty/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

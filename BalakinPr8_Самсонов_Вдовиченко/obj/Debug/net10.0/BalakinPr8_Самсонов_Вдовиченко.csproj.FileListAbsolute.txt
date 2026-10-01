@@ -1,0 +1,15 @@
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/bin/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/bin/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.deps.json
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/bin/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.runtimeconfig.json
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/bin/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.dll
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/bin/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.pdb
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.GeneratedMSBuildEditorConfig.editorconfig
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.AssemblyInfoInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.AssemblyInfo.cs
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.csproj.CoreCompileInputs.cache
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.sourcelink.json
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.dll
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/refint/BalakinPr8_Самсонов_Вдовиченко.dll
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.pdb
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/BalakinPr8_Самсонов_Вдовиченко.genruntimeconfig.cache
+/home/cutecruelty/balakintasks/BalakinPr8_Самсонов_Вдовиченко/obj/Debug/net10.0/ref/BalakinPr8_Самсонов_Вдовиченко.dll

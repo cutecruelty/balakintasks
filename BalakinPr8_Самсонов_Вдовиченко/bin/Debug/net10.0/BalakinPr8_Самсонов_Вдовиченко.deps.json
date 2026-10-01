@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "BalakinPr8_Самсонов_Вдовиченко/1.0.0": {
+        "runtime": {
+          "BalakinPr8_Самсонов_Вдовиченко.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BalakinPr8_Самсонов_Вдовиченко/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
