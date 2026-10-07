@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тест загрузки изображений — JPEG без lazy loading</title>
+<style>
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f4f6f8; color:#1c2733; }
+  header { padding:20px 28px; background:#12324f; color:#fff; }
+  header h1 { margin:0 0 6px; font-size:22px; }
+  header p { margin:0; font-size:14px; opacity:.9; }
+  .wrap { padding:12px 0 90px; }
+  img { display:block; width:800px; max-width:96%; height:auto; margin:14px auto; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.15); }
+  #bar { position:fixed; left:0; right:0; bottom:0; background:#0b0f14; color:#7CFC9B; font:13px/1.5 monospace; padding:10px 16px; white-space:pre-wrap; z-index:9999; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Тест загрузки изображений — JPEG без lazy loading</h1>
+  <p>Вариант: JPEG, без lazy; 6 изображений, суммарный объём исходников: ~31,4 МБ</p>
+</header>
+<div class="wrap">
+  <img src="jpeg/img1.jpg" width="800" height="600" alt="Изображение 1">
+  <img src="jpeg/img2.jpg" width="800" height="600" alt="Изображение 2">
+  <img src="jpeg/img3.jpg" width="800" height="600" alt="Изображение 3">
+  <img src="jpeg/img4.jpg" width="800" height="600" alt="Изображение 4">
+  <img src="jpeg/img5.jpg" width="800" height="600" alt="Изображение 5">
+  <img src="jpeg/img6.jpg" width="800" height="600" alt="Изображение 6">
+</div>
+<div id="bar">Измерение...</div>
+<script>
+window.__lcp = 0;
+try {
+  new PerformanceObserver(function(l) {
+    var e = l.getEntries(); window.__lcp = e[e.length-1].startTime;
+  }).observe({type:'largest-contentful-paint', buffered:true});
+} catch(err) {}
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var nav = performance.getEntriesByType('navigation')[0] || {};
+    var res = performance.getEntriesByType('resource').filter(function(r) { return r.initiatorType === 'img'; });
+    var bytes = res.reduce(function(s,r) { return s + (r.transferSize || r.encodedBodySize || 0); }, 0);
+    var fcp = performance.getEntriesByName('first-contentful-paint')[0];
+    window.__metrics = {
+      variant: "JPEG, без lazy",
+      imgRequests: res.length,
+      imgBytes: bytes,
+      imgMB: +(bytes/1048576).toFixed(2),
+      dclMs: Math.round(nav.domContentLoadedEventEnd || 0),
+      loadMs: Math.round(nav.loadEventEnd || 0),
+      fcpMs: fcp ? Math.round(fcp.startTime) : null,
+      lcpMs: Math.round(window.__lcp)
+    };
+    document.getElementById('bar').textContent =
+      'ВАРИАНТ: ' + window.__metrics.variant +
+      '\nЗапросов изображений: ' + window.__metrics.imgRequests + ' из 6' +
+      '\nПередано изображениями: ' + window.__metrics.imgMB + ' МБ' +
+      '\nDOMContentLoaded: ' + window.__metrics.dclMs + ' мс' +
+      '\nLoad (полная загрузка): ' + window.__metrics.loadMs + ' мс' +
+      '\nFCP: ' + window.__metrics.fcpMs + ' мс' +
+      '\nLCP: ' + window.__metrics.lcpMs + ' мс';
+  }, 800);
+});
+</script>
+</body>
+</html>
